@@ -1,5 +1,6 @@
-# sackhacksstudeo
+# SacHacksStudeo
 
-For SackHacks
+This is a submission to SacHacks! 
 
-I am aware I spelled the package name wrong
+- Android User Interface: https://github.com/weningea/StudeoMea/tree/master/android 
+- Backend Spotify AI Model: 

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'login.dart';
 import 'unimplementedpage.dart';
 import 'dart:io';
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Generated App',
+      title: 'StudeoMea',
       theme: new ThemeData(
         primarySwatch: Colors.deepOrange,
         primaryColor: const Color(0xFFff5722),
@@ -23,7 +24,9 @@ class MyApp extends StatelessWidget {
       routes: {
         // When navigating to the "/second" route, build the SecondScreen widget.
         '/landing': (context) => LandingPage(),
+        '/login': (context) => LoginPage(),
         '/404': (context) => UnimplementedPage(),
+        '/failedAuth': (context) => AuthFailedPage(),
       },
     );
   }
@@ -87,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
   void buttonPressed()
   {
-    Navigator.pushReplacementNamed(context,"/landing");
+    Navigator.pushReplacementNamed(context,"/login");
   }
 
 }
